@@ -1,0 +1,14 @@
+#Dependencies 
+/node_modules/
+
+#Environment variables
+.env
+
+#Test database file 
+/configs/database.sq3
+
+#Server password
+/configs/password.txt
+
+#Logging 
+/logs/

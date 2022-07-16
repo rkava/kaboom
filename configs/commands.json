@@ -1,0 +1,57 @@
+[
+	{
+		"name": "rcon",
+		"description": "Direct RCON tunnel",
+		"auth": 1,
+		"options": [
+			{ 
+				"type": "String", 
+				"name": "command",
+				"description": "RCON command to execute",
+				"required": true
+			}
+		]
+	},
+	{
+		"name": "map", 
+		"description": "Change the server's current map",
+		"auth": 2,
+		"options": [
+			{
+				"type": "String", 
+				"name": "map",
+				"description": "Map to change to",
+				"choices": [
+					{ "name": "mge",       "value": "mge_training_v8_beta4b" },
+					{ "name": "oihguv",    "value": "mge_oihguv_sucks_a12"   },
+					{ "name": "hightower", "value": "plr_hightower" }
+				],
+				"required": true
+			}
+		]
+	},
+	{
+		"name": "lock",
+		"description": "Randomizes/removes the server's password",
+		"auth": 2
+	},
+	{
+		"name": "password",
+		"description": "Gets the server's current password",
+		"auth": 2
+	},
+	{
+		"name": "connect",
+		"description": "Generate a connect link to the server",
+		"auth": 3,
+		"options": [
+			{ 
+				"type": "String",
+				"name": "password", 
+				"description": "The server's password (auth level 3 or lower)",
+				"required": false
+			}
+		]
+	}
+
+]

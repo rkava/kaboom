@@ -1,0 +1,38 @@
+{
+  "name": "kaboom",
+  "version": "2.0.0",
+  "main": "bootstrap.js",
+  "repository": "https://github.com/rkava/kaboom.git",
+  "author": "contact@ryankavanagh.dev",
+  "license": "MIT",
+  "scripts": {
+	"register": "node utils/register.js",
+	"start": "node bootstrap.js",
+    "test": "mocha -r ./testing/_init.js testing",
+	"tailwind": "npx tailwindcss -c ./configs/tailwind.config.js -i ./public/styles.css -o ./public/styles.min.css --minify",
+	"webpack": "webpack --config configs/webpack.config.js"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.35.0",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "passport": "^0.6.0",
+    "passport-steam": "^1.0.17",
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.8",
+    "srcds-rcon": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "mocha": "^10.0.0",
+    "tailwindcss": "^3.1.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
